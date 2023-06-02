@@ -1,0 +1,358 @@
+<! DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title> ARTEMIS </title>
+	<meta charset="utf-8">
+	<link href="css/cgots.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=GFS+Neohellenic&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+	
+
+
+	
+.zoom {
+
+  transition: transform 1.5s; /* Animation */
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+z-index:15;
+display:flex;
+border-radius:15px;
+}
+
+.zoom:hover {
+  transform: scaleX(1.08); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+
+}
+  
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.icons{
+display:block;
+float:left;
+
+z-index:100;
+}
+
+.journey{
+	position:absolute;
+	top:100%;
+font-family: 'GFS Neohellenic', sans-serif;
+}
+main{
+font-family: 'GFS Neohellenic', sans-serif;
+}
+.img{
+padding:25px;
+padding-top:10px;
+margin:25px;
+border-radius:15x;
+display:flex;
+}
+input[type=text] {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px dashed black;
+  background-color:#F6F5F5;
+  font-family: 'GFS Neohellenic', sans-serif;
+  font-size:20px;
+}
+
+select {
+  width: 20%;
+  border: none;
+  border-radius:12px;
+  background-color: #F6F5F5;
+  font-family: 'GFS Neohellenic', sans-serif;
+  font-size:20px;
+  height:5%;
+margin-top:2%;
+margin-left:0.2%;
+}
+.div{
+display:flex;
+background-color:#8BA95E;
+margin-top:2%;
+width:100%
+border-radius:3%;
+}
+
+	</style>
+
+	</head>
+<body>
+<main>
+<nav>
+	<a href="cheapgreekonthestreet.html"><img style="margin" src="images/ARTEMIS1.png" alt="home" height="90%" width="90%"></a>
+	<a style="text-decoration:none; 	font-family: 'GFS Neohellenic', sans-serif;padding-top:0.8%;" href="menu.html"><h2> Menu </h2></a>
+	<a style="text-decoration:none;	font-family: 'GFS Neohellenic', sans-serif;padding-top:0.8%;" href="places.html"><h2> Locations </h2></a>
+	<a style="text-decoration:none;	font-family: 'GFS Neohellenic', sans-serif;padding-top:0.8%;" href="reviews.html"><h2> Reviews </h2></a>
+	<a style="text-decoration:none;	font-family: 'GFS Neohellenic', sans-serif;padding-top:0.8%;" href="catering.html"><h2> Catering </h2></a>
+	<a style="text-decoration:none;	font-family: 'GFS Neohellenic', sans-serif;padding-top:0.8%;" href="#"><h2> Contact  </h2></a>
+	<a style="text-decoration:none; float:right; padding-left:45%;	font-family: 'GFS Neohellenic', sans-serif;padding-top:0.8%;" href="order.html"><h1> Order </h1></a>
+	
+</nav>
+
+
+	<form action="https://formsubmit.co/msantina562@gmail.com" method="POST" />
+  <label for="fname">First Name</label>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last Name</label>
+  <input type="text" id="lname" name="lname">
+<div class="div">
+<h2> Choose an entree </h2>
+
+  <select id="sandiwich" name="main course">
+  <option value="sc"> Select Choice </option>
+  <option value="bg"> Beef Gyro - $10 </option>
+  <option value="pg"> Pork Gyro - $10</option>
+  <option value="cg"> Chicken Gyro - $10</option>
+  <option value="cpp"> Chicken Pesto Pita - $12 </option>
+  <option value="sp"> Steak Pita - $12 </option>
+  <option value="pp"> Pork Pita - $12 </option>
+  <option value="ccsw"> Chicken Ceasar Salad HALF - $8 </option>
+  <option value="ccsh"> Chicken Ceasar Salad WHOLE - $13 </option>
+  <option value="none"> None </option>
+  </select>
+
+  <select style="width:3%"  id=" amt " name="amt of entree">
+  <option value="1"> 1 </option>
+  <option value="2"> 2 </option>
+  <option value="3"> 3 </option>
+  <option value="4"> 4 </option>
+  <option value="5"> 5 </option>
+  <option value="6"> 6 </option>
+  </select>
+
+<h2> Drinks </h2>
+
+
+
+
+  <select  id="drinks " name="main course">
+  <option value="sc"> Select Choice </option>
+  <option value="l"> Lemonade - $4 </option>
+  <option value="cc"> Coca Cola - $3</option>
+  <option value="f"> Fanta - $3</option>
+  <option value="bw"> Bottled Water - $2 </option>
+  <option value="no drink"> None </option>
+  </select>
+  <select style="width:3%" id=" amt " name="amt of drinks">
+
+  <option value="1"> 1 </option>
+  <option value="2"> 2 </option>
+  <option value="3"> 3 </option>
+  <option value="4"> 4 </option>
+  <option value="5"> 5 </option>
+  <option value="6"> 6 </option>
+  </select>
+  <h2>Sides</h2>
+
+  <select style="width:15.5%"  id="sides " name="main course">
+  <option value="sc"> Select Choice </option>
+  <option value="ccsh"> Chicken Ceasar Salad HALF - $8 </option>
+  <option value="ccsw"> Chicken Ceasar Salad WHOLE - $13 </option>
+  <option value="ol"> Original Lay's - $2</option>
+  <option value="vassl"> Vinegar and Sea Salt Lay's - $2</option>
+  <option value="bl"> Baked Lay's - $2.50</option>
+  <option value="f"> Fries - $5 </option>
+  <option value="f+c"> Fries with cheese - $6.50 </option>
+  <option value="o"> Olives - $4 </option>
+  <option value="no side"> None </option>
+</select>
+  <select style="width:3%" id=" amt " name="amt of drinks">
+
+  <option value="1"> 1 </option>
+  <option value="2"> 2 </option>
+  <option value="3"> 3 </option>
+  <option value="4"> 4 </option>
+  <option value="5"> 5 </option>
+  <option value="6"> 6 </option>
+  </select>
+</div>
+<div class="div">
+<h2> Choose an entree </h2>
+
+  <select id="sandiwich" name="main course">
+  <option value="sc"> Select Choice </option>
+  <option value="bg"> Beef Gyro - $10 </option>
+  <option value="pg"> Pork Gyro - $10</option>
+  <option value="cg"> Chicken Gyro - $10</option>
+  <option value="cpp"> Chicken Pesto Pita - $12 </option>
+  <option value="sp"> Steak Pita - $12 </option>
+  <option value="pp"> Pork Pita - $12 </option>
+  <option value="ccsw"> Chicken Ceasar Salad HALF - $8 </option>
+  <option value="ccsh"> Chicken Ceasar Salad WHOLE - $13 </option>
+  <option value="none"> None </option>
+  </select>
+
+  <select style="width:3%"  id=" amt " name="amt of entree">
+  <option value="1"> 1 </option>
+  <option value="2"> 2 </option>
+  <option value="3"> 3 </option>
+  <option value="4"> 4 </option>
+  <option value="5"> 5 </option>
+  <option value="6"> 6 </option>
+  </select>
+
+<h2> Drinks </h2>
+
+
+
+
+  <select  id="drinks " name="main course">
+  <option value="sc"> Select Choice </option>
+  <option value="l"> Lemonade - $4 </option>
+  <option value="cc"> Coca Cola - $3</option>
+  <option value="f"> Fanta - $3</option>
+  <option value="bw"> Bottled Water - $2 </option>
+  <option value="no drink"> None </option>
+  </select>
+  <select style="width:3%" id=" amt " name="amt of drinks">
+
+  <option value="1"> 1 </option>
+  <option value="2"> 2 </option>
+  <option value="3"> 3 </option>
+  <option value="4"> 4 </option>
+  <option value="5"> 5 </option>
+  <option value="6"> 6 </option>
+  </select>
+  <h2>Sides</h2>
+
+  <select style="width:15.5%"  id="sides " name="main course">
+  <option value="sc"> Select Choice </option>
+  <option value="ccsh"> Chicken Ceasar Salad HALF - $8 </option>
+  <option value="ccsw"> Chicken Ceasar Salad WHOLE - $13 </option>
+  <option value="ol"> Original Lay's - $2</option>
+  <option value="vassl"> Vinegar and Sea Salt Lay's - $2</option>
+  <option value="bl"> Baked Lay's - $2.50</option>
+  <option value="f"> Fries - $5 </option>
+  <option value="f+c"> Fries with cheese - $6.50 </option>
+  <option value="o"> Olives - $4 </option>
+  <option value="no side"> None </option>
+</select>
+  <select style="width:3%" id=" amt " name="amt of drinks">
+
+  <option value="1"> 1 </option>
+  <option value="2"> 2 </option>
+  <option value="3"> 3 </option>
+  <option value="4"> 4 </option>
+  <option value="5"> 5 </option>
+  <option value="6"> 6 </option>
+  </select>
+</div>
+<div class="div">
+<h2> Choose an entree </h2>
+
+  <select id="sandiwich" name="main course">
+  <option value="sc"> Select Choice </option>
+  <option value="bg"> Beef Gyro - $10 </option>
+  <option value="pg"> Pork Gyro - $10</option>
+  <option value="cg"> Chicken Gyro - $10</option>
+  <option value="cpp"> Chicken Pesto Pita - $12 </option>
+  <option value="sp"> Steak Pita - $12 </option>
+  <option value="pp"> Pork Pita - $12 </option>
+  <option value="ccsw"> Chicken Ceasar Salad HALF - $8 </option>
+  <option value="ccsh"> Chicken Ceasar Salad WHOLE - $13 </option>
+  <option value="none"> None </option>
+  </select>
+
+  <select style="width:3%"  id=" amt " name="amt of entree">
+  <option value="1"> 1 </option>
+  <option value="2"> 2 </option>
+  <option value="3"> 3 </option>
+  <option value="4"> 4 </option>
+  <option value="5"> 5 </option>
+  <option value="6"> 6 </option>
+  </select>
+
+<h2> Drinks </h2>
+
+
+
+
+  <select  id="drinks " name="main course">
+  <option value="sc"> Select Choice </option>
+  <option value="l"> Lemonade - $4 </option>
+  <option value="cc"> Coca Cola - $3</option>
+  <option value="f"> Fanta - $3</option>
+  <option value="bw"> Bottled Water - $2 </option>
+  <option value="no drink"> None </option>
+  </select>
+  <select style="width:3%" id=" amt " name="amt of drinks">
+
+  <option value="1"> 1 </option>
+  <option value="2"> 2 </option>
+  <option value="3"> 3 </option>
+  <option value="4"> 4 </option>
+  <option value="5"> 5 </option>
+  <option value="6"> 6 </option>
+  </select>
+  <h2>Sides</h2>
+
+  <select style="width:15.5%"  id="sides " name="main course">
+  <option value="sc"> Select Choice </option>
+  <option value="ccsh"> Chicken Ceasar Salad HALF - $8 </option>
+  <option value="ccsw"> Chicken Ceasar Salad WHOLE - $13 </option>
+  <option value="ol"> Original Lay's - $2</option>
+  <option value="vassl"> Vinegar and Sea Salt Lay's - $2</option>
+  <option value="bl"> Baked Lay's - $2.50</option>
+  <option value="f"> Fries - $5 </option>
+  <option value="f+c"> Fries with cheese - $6.50 </option>
+  <option value="o"> Olives - $4 </option>
+  <option value="no side"> None </option>
+</select>
+  <select style="width:3%" id=" amt " name="amt of drinks">
+
+  <option value="1"> 1 </option>
+  <option value="2"> 2 </option>
+  <option value="3"> 3 </option>
+  <option value="4"> 4 </option>
+  <option value="5"> 5 </option>
+  <option value="6"> 6 </option>
+  </select>
+</div>
+  <input style="font-family: 'GFS Neohellenic', sans-serif;
+  font-size:28px; border-radius:12px; border-color:#8BA95E; background-color:#8BA95E; height:7%; width:7%;  position:absolute; left:40%; margin:3% " type="submit"> 
+  <input style="font-family: 'GFS Neohellenic', sans-serif;
+  font-size:28px; border-radius:12px; border-color:#8BA95E; background-color:#8BA95E; height:7%; width:7%;  position:absolute; left:50%; margin:3% "  type="reset"> 
+</main>
+</body>
+</html>

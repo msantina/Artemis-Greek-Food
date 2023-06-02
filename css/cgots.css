@@ -1,0 +1,92 @@
+body{
+	background-color:#F6F5F5;
+}
+main{
+	background: url(images/gyro.jpeg) no-repeat;
+	background-size: cover;
+	height:100%;
+	background-position:left;
+	width:100%;
+	background-color:#F6F5F5;
+}
+
+
+nav{
+	background-color:#F1F0F0;
+	display:flex; 
+	position:sticky;
+	width:100%;
+	font-family: 'Teko', sans-serif;
+	text-align:center;
+	text-decoration: none;
+
+}
+ h2{
+	  text-decoration: none;
+	  margin:10px;
+	  color:black;
+	  padding:10px;
+	  
+}
+h3{
+	text-decoration: none;
+	  margin:10px;
+	  color:black;
+	  padding:10px;
+}
+a:hover h1{
+	  transition: all ease 1.5s;
+	  background-color: #2A4D14;
+	text-decoration: none;
+	padding:10px;
+	margin:6px;
+	font-size:30px;
+	border-radius:3px;
+}
+
+h1{
+	color:white;
+	background-color:#8BA95E;
+	text-decoration:none;
+	padding:10px;
+	margin:6px;
+	font-size:30px;
+	border-radius:3px;
+}
+.banner{
+	background-color:#F4650E;
+}
+
+
+
+
+
+/*<div class="nav" style="text-decoration: none;">
+	
+
+	<a style="text-decoration:none;" href="#"><h2> Menu </h2></a>
+	<a style="text-decoration:none;" href="#"><h2> Places </h2></a>
+	<a style="text-decoration:none;" href="#"><h2> Reviews </h2></a>
+	<a style="text-decoration:none;" href="#"><h2> Catering </h2></a>
+	<a style="text-decoration:none;" href="#"><h2> Contact Us! </h2></a>
+	<a style="text-decoration:none;" href="#"><h1> Order </h1></a>
+	</div>
+	</nav>
+<main>
+<img style="" src="images/truck.jpg" alt="truck" height="87%" width="85%">
+
+<h2>About Us</h2>
+<p> Our journey has started a long time ago, back in greece where my great-grandparents started their business on the streets of Santorini, Greece. They would sell the best Gyros on the whole island. We decided to bring a little bit of Greece to over here!</p>
+
+
+
+
+
+</main>
+<footer>
+</footer>
+</body>
+</html>
+
+https://kingsouvlakinyc.com/
+*/
